@@ -1,0 +1,818 @@
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 18:35:13] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 18:35:13] "GET /favicon.ico HTTP/1.1" 404 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/bhtucker/rc/vowel/voweler/views.py", line 17, in base
+    import pdb; pdb.set_trace()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/bdb.py", line 53, in trace_dispatch
+    return self.dispatch_return(frame, arg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/bdb.py", line 91, in dispatch_return
+    if self.quitting: raise BdbQuit
+BdbQuit
+127.0.0.1 - - [28/Mar/2016 18:41:28] "GET / HTTP/1.1" 500 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/bhtucker/rc/vowel/voweler/views.py", line 18, in base
+    import pdb; pdb.set_trace()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/bdb.py", line 53, in trace_dispatch
+    return self.dispatch_return(frame, arg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/bdb.py", line 91, in dispatch_return
+    if self.quitting: raise BdbQuit
+BdbQuit
+127.0.0.1 - - [28/Mar/2016 18:45:26] "GET / HTTP/1.1" 500 -
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/bhtucker/rc/vowel/voweler/views.py", line 18, in base
+    import pdb; pdb.set_trace()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/bdb.py", line 53, in trace_dispatch
+    return self.dispatch_return(frame, arg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/bdb.py", line 91, in dispatch_return
+    if self.quitting: raise BdbQuit
+BdbQuit
+127.0.0.1 - - [28/Mar/2016 18:45:49] "GET / HTTP/1.1" 500 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+Exception on /a [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:47:18] "GET /a HTTP/1.1" 500 -
+Exception on /b [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:47:31] "GET /b HTTP/1.1" 500 -
+Exception on /b [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:47:34] "GET /b HTTP/1.1" 500 -
+Exception on /b [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:47:35] "GET /b HTTP/1.1" 500 -
+Exception on /b [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:47:36] "GET /b HTTP/1.1" 500 -
+Exception on /b [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:47:37] "GET /b HTTP/1.1" 500 -
+Exception on /a [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:47:41] "GET /a HTTP/1.1" 500 -
+Exception on /a [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:47:43] "GET /a HTTP/1.1" 500 -
+Exception on /a [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:47:44] "GET /a HTTP/1.1" 500 -
+Exception on /b [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:47:46] "GET /b HTTP/1.1" 500 -
+Exception on /c [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:47:47] "GET /c HTTP/1.1" 500 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/perceptron.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+Exception on /c [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:48:51] "GET /c HTTP/1.1" 500 -
+Exception on /c [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:48:53] "GET /c HTTP/1.1" 500 -
+Exception on /c [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:48:54] "GET /c HTTP/1.1" 500 -
+Exception on /c [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:48:54] "GET /c HTTP/1.1" 500 -
+Exception on /c [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:48:54] "GET /c HTTP/1.1" 500 -
+Exception on /c [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:48:55] "GET /c HTTP/1.1" 500 -
+Exception on /c [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:48:55] "GET /c HTTP/1.1" 500 -
+Exception on /c [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:48:55] "GET /c HTTP/1.1" 500 -
+Exception on /c [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:48:55] "GET /c HTTP/1.1" 500 -
+Exception on /c [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:48:56] "GET /c HTTP/1.1" 500 -
+Exception on /a [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:48:58] "GET /a HTTP/1.1" 500 -
+Exception on /a [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:48:59] "GET /a HTTP/1.1" 500 -
+Exception on /a [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+127.0.0.1 - - [28/Mar/2016 18:49:01] "GET /a HTTP/1.1" 500 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+Exception on /a [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/bhtucker/rc/vowel/voweler/views.py", line 21, in base
+    voweler.vp.count])
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/jinja2/environment.py", line 774, in _load_template
+    cache_key = self.loader.get_source(self, name)[1]
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: show.html
+127.0.0.1 - - [28/Mar/2016 18:55:51] "GET /a HTTP/1.1" 500 -
+Exception on /a [GET]
+Traceback (most recent call last):
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/bhtucker/rc/vowel/voweler/views.py", line 21, in base
+    voweler.vp.count])
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/jinja2/environment.py", line 774, in _load_template
+    cache_key = self.loader.get_source(self, name)[1]
+  File "/Users/bhtucker/.virtualenvs/vowel/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: show.html
+127.0.0.1 - - [28/Mar/2016 18:55:59] "GET /a HTTP/1.1" 500 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/factory.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 18:57:25] "GET /a HTTP/1.1" 500 -
+127.0.0.1 - - [28/Mar/2016 18:57:25] "GET /a?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 18:57:25] "GET /a?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 18:57:25] "GET /a?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 18:57:25] "GET /a?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 18:57:25] "GET /a?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 18:57:25] "GET /a?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 18:58:20] "GET /a HTTP/1.1" 500 -
+127.0.0.1 - - [28/Mar/2016 18:58:20] "GET /a?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 18:58:20] "GET /a?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 18:58:20] "GET /a?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 18:58:20] "GET /a?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 18:58:20] "GET /a?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 18:58:20] "GET /a?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 18:59:14] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 18:59:16] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 18:59:16] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 18:59:17] "GET /a HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 19:01:46] "GET /a HTTP/1.1" 200 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 19:04:03] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:33] "GET /a HTTP/1.1" 500 -
+127.0.0.1 - - [28/Mar/2016 19:04:33] "GET /a?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:33] "GET /a?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:33] "GET /a?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:33] "GET /a?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:33] "GET /a?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:33] "GET /a?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:47] "GET /a HTTP/1.1" 500 -
+127.0.0.1 - - [28/Mar/2016 19:04:47] "GET /a?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:47] "GET /a?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:47] "GET /a?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:47] "GET /a?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:47] "GET /a?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:47] "GET /a?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:55] "GET /a HTTP/1.1" 500 -
+127.0.0.1 - - [28/Mar/2016 19:04:55] "GET /a?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:55] "GET /a?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:55] "GET /a?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:55] "GET /a?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:55] "GET /a?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:04:55] "GET /a?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:05:05] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:05:08] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:05:09] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:08:06] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:08:09] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:08:14] "GET /c HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:08:16] "GET /c HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:08:21] "GET /d HTTP/1.1" 200 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 19:09:16] "GET /d HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:09:22] "GET /e HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:09:24] "GET /f HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:09:25] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:09:41] "GET /d HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:09:42] "GET /c HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:09:44] "GET /h HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:10:38] "GET /h HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:11:03] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:11:04] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:11:13] "GET /g HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:11:14] "GET /e HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:11:15] "GET /f HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 19:11:17] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 19:11:19] "GET /p HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:01] "GET /p HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:03] "GET /p HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:15] "GET /p HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:17] "GET /p HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:21] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:22] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:25] "GET /f HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:29] "GET /e HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:32] "GET /h HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:34] "GET /hn HTTP/1.1" 500 -
+127.0.0.1 - - [28/Mar/2016 23:16:35] "GET /hn?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:35] "GET /hn?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:35] "GET /hn?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:35] "GET /hn?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:35] "GET /hn?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:35] "GET /hn?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:37] "GET /n HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:42] "GET /u HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:44] "GET /v HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:16:46] "GET /v HTTP/1.1" 200 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 23:17:43] "GET /q HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:17:47] "GET /v HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:17:48] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:17:50] "GET /b HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:17:51] "GET /c HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:17:53] "GET /e HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:17:55] "GET /g HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:17:58] "GET /g HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:00] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:02] "GET /e HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:05] "GET /o HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:07] "GET /o HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:10] "GET /n HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:12] "GET /nx HTTP/1.1" 500 -
+127.0.0.1 - - [28/Mar/2016 23:18:12] "GET /nx?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:12] "GET /nx?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:12] "GET /nx?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:12] "GET /nx?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:12] "GET /nx?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:12] "GET /nx?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:14] "GET /x HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:18] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:19] "GET /g HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:23] "GET /p HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:24] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:26] "GET /b HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:27] "GET /c HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:30] "GET /e HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:33] "GET /f HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:35] "GET /g HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:38] "GET /gi HTTP/1.1" 500 -
+127.0.0.1 - - [28/Mar/2016 23:18:38] "GET /gi?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:38] "GET /gi?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:38] "GET /gi?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:38] "GET /gi?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:38] "GET /gi?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:39] "GET /gi?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:18:40] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:21:36] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:22:04] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:22:16] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:22:30] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:22:31] "GET /l HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:22:32] "GET /q HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:22:32] "GET /k HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:22:33] "GET /e HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:22:33] "GET /e HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:22:34] "GET /h HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:22:34] "GET /n HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:22:35] "GET /q HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:25:34] "GET /q HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:25:34] "GET /js/jquery-1.11.0.min-910066fb.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:25:34] "GET /js/foundation.min-1dfe8110.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:25:34] "GET /js/highlight.pack-4af5004d.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:25:34] "GET /js/d3-3.5.0.min-3b564392.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:25:34] "GET /js/c3.min-12912fb6.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:25:35] "GET /q HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:25:35] "GET /js/jquery-1.11.0.min-910066fb.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:25:35] "GET /js/foundation.min-1dfe8110.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:25:35] "GET /js/highlight.pack-4af5004d.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:25:35] "GET /js/d3-3.5.0.min-3b564392.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:25:35] "GET /js/c3.min-12912fb6.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:23] "GET /q HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:26:23] "GET /js/jquery-1.11.0.min-910066fb.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:23] "GET /js/foundation.min-1dfe8110.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:23] "GET /js/highlight.pack-4af5004d.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:23] "GET /js/d3-3.5.0.min-3b564392.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:23] "GET /js/c3.min-12912fb6.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:26] "GET /m HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:26:26] "GET /js/jquery-1.11.0.min-910066fb.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:26] "GET /js/foundation.min-1dfe8110.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:26] "GET /js/highlight.pack-4af5004d.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:26] "GET /js/d3-3.5.0.min-3b564392.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:26] "GET /js/c3.min-12912fb6.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:27] "GET /m HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:26:27] "GET /js/jquery-1.11.0.min-910066fb.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:27] "GET /js/foundation.min-1dfe8110.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:27] "GET /js/highlight.pack-4af5004d.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:27] "GET /js/d3-3.5.0.min-3b564392.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:27] "GET /js/c3.min-12912fb6.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:52] "GET /m HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:26:52] "GET /js/jquery-1.11.0.min-910066fb.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:52] "GET /js/foundation.min-1dfe8110.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:52] "GET /js/highlight.pack-4af5004d.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:52] "GET /js/d3-3.5.0.min-3b564392.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:26:52] "GET /js/c3.min-12912fb6.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:28:14] "GET /m HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:28:14] "GET /c3js.org/js/jquery-1.11.0.min-910066fb.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:28:14] "GET /c3js.org/js/foundation.min-1dfe8110.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:28:14] "GET /c3js.org/js/highlight.pack-4af5004d.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:28:14] "GET /c3js.org/js/d3-3.5.0.min-3b564392.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:28:14] "GET /c3js.org/js/c3.min-12912fb6.js HTTP/1.1" 404 -
+127.0.0.1 - - [28/Mar/2016 23:28:23] "GET /m HTTP/1.1" 200 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 23:29:56] "GET /m HTTP/1.1" 500 -
+127.0.0.1 - - [28/Mar/2016 23:29:56] "GET /m?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:29:56] "GET /m?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:29:56] "GET /m?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:29:56] "GET /m?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:29:57] "GET /m?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:29:57] "GET /m?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 23:30:05] "GET /m HTTP/1.1" 500 -
+127.0.0.1 - - [28/Mar/2016 23:30:05] "GET /m?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:30:05] "GET /m?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:30:05] "GET /m?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:30:05] "GET /m?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:30:05] "GET /m?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 23:30:11] "GET /m HTTP/1.1" 500 -
+127.0.0.1 - - [28/Mar/2016 23:30:11] "GET /m?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:30:11] "GET /m?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:30:11] "GET /m?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:30:11] "GET /m?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:30:11] "GET /m?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 23:31:51] "GET /m HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:31:53] "GET /m HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:32:20] "GET /m HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:32:36] "GET /m HTTP/1.1" 200 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 23:33:18] "GET /m HTTP/1.1" 200 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 23:33:58] "GET /m HTTP/1.1" 200 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 23:34:20] "GET /m HTTP/1.1" 200 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 23:36:36] "GET /m HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:38:04] "GET /m HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:38:23] "GET /m HTTP/1.1" 200 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 23:39:17] "GET /m HTTP/1.1" 200 -
+ * Detected change in '/Users/bhtucker/rc/vowel/voweler/views.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+127.0.0.1 - - [28/Mar/2016 23:40:25] "GET /m HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:42:39] "GET /m HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:43:59] "GET /m HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:09] "GET /u HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:10] "GET /j HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:11] "GET /f HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:12] "GET /j HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:13] "GET /n HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:14] "GET /f HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:14] "GET /d HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:15] "GET /b HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:16] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:17] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:19] "GET /g HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:19] "GET /f HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:20] "GET /l HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:21] "GET /p HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:21] "GET /u HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:23] "GET /v HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:24] "GET /u HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:25] "GET /s HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:34] "GET /p HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:35] "GET /n HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:36] "GET /o HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:41] "GET /m HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:41] "GET /k HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:42] "GET /h HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:43] "GET /g HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:44] "GET /f HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:45] "GET /e HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:45] "GET /e HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:47] "GET /e HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:50] "GET /n HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:51] "GET /m HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:51] "GET /p HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:52] "GET /r HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:53] "GET /p HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:54] "GET /o HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:56] "GET /l HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:57] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:58] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:44:59] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:45:00] "GET /j HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:45:01] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:45:02] "GET /k HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:45:03] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [28/Mar/2016 23:45:04] "GET /i HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/
+ * Restarting with reloader
+127.0.0.1 - - [29/Mar/2016 00:13:46] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:04] "GET /x HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:05] "GET /y HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:06] "GET /y HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:07] "GET /y HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:08] "GET /z HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:10] "GET /u HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:12] "GET /s HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:13] "GET /r HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:14] "GET /r HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:14] "GET /q HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:15] "GET /p HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:17] "GET /o HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:23] "GET /o HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:23] "GET /o HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:28] "GET /o HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:30] "GET /n HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:32] "GET /o HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:32] "GET /p HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:35] "GET /p HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:36] "GET /q HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:37] "GET /r HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:38] "GET /o HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:41] "GET /h HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:41] "GET /g HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:44] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:45] "GET /b HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:52] "GET /a HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:53] "GET /b HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:56] "GET /g HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:57] "GET /e HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:58] "GET /f HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:14:59] "GET /f HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:15:00] "GET /g HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:15:01] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:15:02] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:15:04] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:15:05] "GET /h HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:15:06] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:15:07] "GET /h HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:15:08] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:15:09] "GET /j HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:15:11] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:15:12] "GET /e HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:15:15] "GET /j HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:15:16] "GET /h HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:15:18] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:15:19] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:15:21] "GET /l HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/
+ * Restarting with reloader
+127.0.0.1 - - [29/Mar/2016 00:28:55] "GET /l HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:28:56] "GET /w HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:00] "GET /l HTTP/1.1" 500 -
+127.0.0.1 - - [29/Mar/2016 00:29:02] "GET /v HTTP/1.1" 500 -
+127.0.0.1 - - [29/Mar/2016 00:29:02] "GET /v?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:02] "GET /v?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:02] "GET /v?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:02] "GET /v?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:02] "GET /v?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:02] "GET /v?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:02] "GET /v?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/
+ * Restarting with reloader
+127.0.0.1 - - [29/Mar/2016 00:29:28] "GET /v HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:34] "GET /t HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:36] "GET /s HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:36] "GET /u HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:37] "GET /t HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:38] "GET /u HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:39] "GET /t HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:40] "GET /v HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:40] "GET /u HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:41] "GET /s HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:42] "GET /s HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:43] "GET /t HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:44] "GET /q HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:45] "GET /p HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:45] "GET /o HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:46] "GET /m HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:47] "GET /k HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:47] "GET /j HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:48] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:49] "GET /h HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:49] "GET /i HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:50] "GET /g HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:51] "GET /d HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:52] "GET /d HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:29:52] "GET /e HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:37:08] "GET /x HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:37:09] "GET /w HTTP/1.1" 200 -
+127.0.0.1 - - [29/Mar/2016 00:37:10] "GET /p HTTP/1.1" 200 -
