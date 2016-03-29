@@ -23,3 +23,23 @@ Each page load gets predictions (red vowel, blue consonant) for the full alphabe
 Click a letter to teach the perceptron! (Only errors count)
 
 ![Graph](perceptron_state.png)
+
+## To run
+
+Requires numpy and Flask
+
+Simply:
+
+```
+$ python wsgi.py 
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger pin code: 154-709-709
+
+```
+
+and it should work! (TODO: 5000 is hardcoded in template)
+
+
+
