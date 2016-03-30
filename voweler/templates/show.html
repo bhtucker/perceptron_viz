@@ -1,57 +1,74 @@
-{% block body %}
-  <ul>
-  {% for entry in entries %}
-    <li><h2>{{ entry }}</h2>
-  {% endfor %}
-  </ul>
-  <ul>
-  {% for entry in vocab %}
-    {% if entry[1] == 1 %}
-    	<a href="http://localhost:5000/{{ entry[0] }}"> 
-    		<span style="color: red">{{ entry[0] }} </span>
-    	</a>
-    {% else %}
-    	<a href="http://localhost:5000/{{ entry[0] }}"> 
-			<span style="color: blue">{{ entry[0] }} </span>
-    	</a>
-	{% endif %}
-  {% endfor %}
-  </ul>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}" />
+	<link 
+		rel="stylesheet" 
+		type="text/css" 
+		href="{{ url_for('static', filename='style.css') }}" 
+	/>
+
+</head>
+
+<body>
+<h1 class='title'>Perceptron Visualization</h1>
+<p>
+	By hashing letters with various salts, we can try out different feature spaces for vowel identification.
+	The first scatterplot shows the projection into 'decision space' under the current perceptron state.
+	The "best" linear separation, via scikit-learn's Linear Discriminant Analysis, is shown below, along with LDA's accuracy %. This gives some measure of whether the perceptron has any hope of succeeding under the current embedding.
+</p>
+<section>
+	<div id='one'>
+		<h3 class='title'>Click an error to train the perceptron (red = vowel)</h3>
+		{% block body %}
+		  {% for letter in letters %}
+		  	<span
+			  	class='letter'
+			  	onclick='getState("{{ letter }}")'
+			  	id='{{ letter }}'>{{ letter }}</span>
+		  {% endfor %}
+	</div>
+	<div id='two'>
+		<span class='score' id='score'>?</span>
+		<h4>Perceptron vs LDA Accuracy Scores</h4>		
+	</div>
+</section>
+  <br>
+  <h3 class='title'>Or teach in batches:</h3>
+  <button onclick='trainAlphabet()'>Teach it the whole alphabet</button>
+  <br>
+  <button onclick='trainVowels()'>Teach it the vowels</button>
+  <br>
+  <button onclick='trainConsonants()'>Teach it the consonants</button>
+  <br>
+  <button onclick='setSalt()'>Set a new salt to embed characters differently</button>
+  <input type="textbox" id='salt' value=""></input>
 
 
 <div class='container'>
-<h1 class='title'>Line Chart</h1>
-<div class='chart'>
-<div id='chart'></div>
+	<h1 class='title'>Separability Plots</h1>
+	<h3 class='title'>Current Perceptron Projection</h3>
+<div class='plot'>
+	<div id='plot'> </div>
 </div>
+	<h3 class='title'>Linear Discriminant Projection</h3>
+<div class='lda_plot'>
+	<div id='lda_plot'> </div>
+</div>
+<br>
+
+<!-- <div class='chart'>
+	<div id='chart'>
+	</div>
+</div>
+ -->
 
 
-<script src="http://c3js.org/js/jquery-1.11.0.min-910066fb.js" type="text/javascript"></script>
-<script src="http://c3js.org/js/foundation.min-1dfe8110.js" type="text/javascript"></script>
-<script src="http://c3js.org/js/highlight.pack-4af5004d.js" type="text/javascript"></script>
-<script src="http://c3js.org/js/d3-3.5.0.min-3b564392.js" type="text/javascript"></script>
-<script src="http://c3js.org/js/c3.min-12912fb6.js" type="text/javascript"></script>
 
-  <script type="text/javascript">
+<script src="{{ url_for('static', filename='jquery-1.11.0.min-910066fb.js')}}" type="text/javascript"></script>
+<script src="{{ url_for('static', filename='d3-3.5.0.min-3b564392.js')}}" type="text/javascript"></script>
+<script src="{{ url_for('static', filename='c3.min-12912fb6.js')}}" type="text/javascript"></script>
 
-weights = JSON.parse('{{ weights }}');
-head = ["Weights"];
-console.log(weights);
+<script src="{{ url_for('static', filename='app.js')}}"  type="text/javascript"></script>
 
-var chart = c3.generate({
-    data: {
-        columns: [head.concat(weights)],
-        type: 'bar'
-    },
-    bar: {
-        width: 100 // this makes bar width 100px
-    }
-});
-
-console.log(chart);
-
-setTimeout(function () {
-    chart.load();
-}, 1000);
-  </script>
 {% endblock %}
+</body>

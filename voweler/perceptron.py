@@ -7,8 +7,10 @@
 """
 
 import numpy as np
+import math
 from string import ascii_lowercase
-VOWELS = {'a', 'e', 'i', 'o', 'u', 'y'}
+from letters import is_vowel
+from embedding import get_embedding
 
 
 class Perceptron(object):
@@ -21,6 +23,8 @@ class Perceptron(object):
         self.w = np.random.random(input_width)
 
     def predict(self, point):
+        if len(point) != len(self.w):
+            import pdb; pdb.set_trace()
         return 1. if np.dot(self.w, point) > .5 else 0.
 
     def update(self, point, error):
@@ -29,13 +33,12 @@ class Perceptron(object):
 
 class VowelPerceptron(Perceptron):
     """Vowel-detection specific methods for perceptron"""
-    def __init__(self, *args, **kwargs):
-        super(VowelPerceptron, self).__init__(**kwargs)
+    def __init__(self, salt='', *args, **kwargs):
         self.count = 0
-        if 'to_vec' in kwargs:
-            self.to_vec = kwargs['to_vec']
-        else:
-            self.to_vec = lambda v: np.array(map(int, str(hash(v))))
+        (self.to_vec, input_width) = get_embedding(salt)
+        kwargs['input_width'] = input_width
+        super(VowelPerceptron, self).__init__(**kwargs)
+        self.salt = salt
 
     def handle_letter(self, letter, update=True):
         point = self.to_vec(letter)
@@ -45,6 +48,3 @@ class VowelPerceptron(Perceptron):
             self.update(point, error)
             self.count += 1
         return pred
-
-def is_vowel(letter):
-    return 1. if letter in VOWELS else 0.
