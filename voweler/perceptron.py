@@ -23,8 +23,6 @@ class Perceptron(object):
         self.w = np.random.random(input_width)
 
     def predict(self, point):
-        if len(point) != len(self.w):
-            import pdb; pdb.set_trace()
         return 1. if np.dot(self.w, point) > .5 else 0.
 
     def update(self, point, error):
@@ -33,12 +31,9 @@ class Perceptron(object):
 
 class VowelPerceptron(Perceptron):
     """Vowel-detection specific methods for perceptron"""
-    def __init__(self, salt='', *args, **kwargs):
-        self.count = 0
-        (self.to_vec, input_width) = get_embedding(salt)
-        kwargs['input_width'] = input_width
+    def __init__(self, *args, **kwargs):
         super(VowelPerceptron, self).__init__(**kwargs)
-        self.salt = salt
+        self.to_vec = get_embedding(self.input_width)
 
     def handle_letter(self, letter, update=True):
         point = self.to_vec(letter)
@@ -46,5 +41,4 @@ class VowelPerceptron(Perceptron):
         if update:
             error = is_vowel(letter) - pred
             self.update(point, error)
-            self.count += 1
         return pred

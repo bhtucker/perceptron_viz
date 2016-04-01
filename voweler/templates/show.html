@@ -12,9 +12,12 @@
 <body>
 <h1 class='title'>Perceptron Visualization</h1>
 <p>
-	By hashing letters with various salts, we can try out different feature spaces for vowel identification.
-	The first scatterplot shows the projection into 'decision space' under the current perceptron state.
-	The "best" linear separation, via scikit-learn's Linear Discriminant Analysis, is shown below, along with LDA's accuracy %. This gives some measure of whether the perceptron has any hope of succeeding under the current embedding.
+	This app illustrates how online learning relates to the sequence of training data, as well as how dimensionality aids in classification.
+	We draw 26 random vectors, and, mapping them to the alphabet, assign each letter to either the 'consonant' class or the 'vowel' class.
+	Select a dimensionality to redraw letter positions in that space.
+	To assess how separable the classes are under the current draw, classification via Linear Discriminant Analysis is performed for each random draw.
+	The accuracy LDA achieves is shown alongside the perceptron accuracy as a loose upper bound of what can be expected.
+	Similarly, the projection of letters onto a decision line is shown for both the perceptron (above) and LDA (below).
 </p>
 <section>
 	<div id='one'>
@@ -40,27 +43,25 @@
   <br>
   <button onclick='trainConsonants()'>Teach it the consonants</button>
   <br>
-  <button onclick='setSalt()'>Set a new salt to embed characters differently</button>
-  <input type="textbox" id='salt' value=""></input>
+  <button onclick='setSize()'>Set a new size to embed characters differently</button>
+  <input type="textbox" id='size' value=""></input>
 
 
 <div class='container'>
 	<h1 class='title'>Separability Plots</h1>
 	<h3 class='title'>Current Perceptron Projection</h3>
-<div class='plot'>
-	<div id='plot'> </div>
-</div>
+	<div class='plot'>
+		<div id='plot'> </div>
+	</div>
 	<h3 class='title'>Linear Discriminant Projection</h3>
-<div class='lda_plot'>
-	<div id='lda_plot'> </div>
-</div>
-<br>
-
-<!-- <div class='chart'>
-	<div id='chart'>
+	<div class='lda_plot'>
+		<div id='lda_plot'> </div>
+	</div>
+	<br>
+	<div class='chart'>
+		<div id='chart'></div>
 	</div>
 </div>
- -->
 
 
 

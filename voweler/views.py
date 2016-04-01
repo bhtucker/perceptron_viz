@@ -6,7 +6,9 @@
     Routes & views for this app!
 """
 
-from flask import Blueprint, render_template, abort, jsonify, request
+from flask import (
+	Blueprint, render_template, abort, jsonify, request, current_app
+)
 from jinja2 import TemplateNotFound
 import voweler
 from string import ascii_lowercase
@@ -35,36 +37,37 @@ def state():
 	"""
 	next_letter = request.args.get('update')
 	if next_letter:
-		perceptron_response = voweler.vp.handle_letter(next_letter)
+		current_app.vp.handle_letter(next_letter)
 
 	vocab = [
-		(e, voweler.vp.handle_letter(e, update=False))
+		(e, current_app.vp.handle_letter(e, update=False))
 		for e in ascii_lowercase
 	]
-	current_score = voweler.separability.get_perceptron_accuracy(voweler.vp)
+	current_score = voweler.separability.get_perceptron_accuracy(current_app.vp)
 	scatter_data = voweler.separability.project_to_1d(
-		voweler.vp.to_vec, voweler.vp.w
+		current_app.vp.to_vec, current_app.vp.w
 	)
-
 	return jsonify(
-		weights=[round(x, 2) for x in voweler.vp.w],
+		weights=[round(x, 2) for x in current_app.vp.w],
 		vowels=[
 			l
 			for l in ascii_lowercase
-			if voweler.vp.handle_letter(l, update=False) == 1.
+			if current_app.vp.handle_letter(l, update=False) == 1.
 		],
 		scatter_data=scatter_data,
 		current_score=render_score(current_score)
 	)
 
 
-@simple_page.route('/salt')
-def set_salt():
-	salt = request.args.get('salt', '')
-	voweler.vp = voweler.perceptron.VowelPerceptron(salt=salt)
+@simple_page.route('/size')
+def set_size():
+	size = request.args.get('size')
+	perceptron_kwargs = {}
+	if size:
+		perceptron_kwargs['input_width'] = int(size)
+	current_app.vp = voweler.perceptron.VowelPerceptron(**perceptron_kwargs)
 	(x_data, y_data, score) = voweler.separability.assess_embedding(
-		voweler.vp.to_vec)
-	print "%s: %s" % (salt, score)
+		current_app.vp.to_vec)
 	return jsonify(
 		reset=True,
 		scatter_data=voweler.separability.get_c3_payload(x_data, y_data),

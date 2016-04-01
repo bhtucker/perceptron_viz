@@ -10,23 +10,11 @@ import math
 from string import ascii_lowercase
 
 
-def get_embedding(salt):
-    """
-    Help embed lower case chars into feature space by hashing against salt
-    Returns (converted function, dimensions of vector space)
-    """
-    hash_with_salt = lambda char: str(abs(hash(char + salt)))
-    basic_to_vec = lambda char: np.array(map(int, hash_with_salt(char)))
-    vecs = map(basic_to_vec, ascii_lowercase)
-    lens = map(len, vecs)
-    if len(set(lens)) == 1:
-        return (basic_to_vec, lens[0])
-    max_len = max(map(len, vecs))
-
-    def to_vec(char):
-        hash_string = hash_with_salt(char)
-        repeated_hash_string = hash_string * int(
-            math.ceil(max_len / float(len(hash_string)))
-        )
-        return np.array(map(int, repeated_hash_string[:max_len]))
-    return (to_vec, max_len)
+def get_embedding(size):
+	letter_map = {l: np.random.random(size) for l in ascii_lowercase}
+	def to_vec(char):
+		return letter_map[char]
+	to_vec.__doc__ = """
+		Returns a {size}-length vector corresponding to the lowercase letter :char
+		""".format(size=size)
+	return to_vec
