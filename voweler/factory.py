@@ -8,6 +8,7 @@
 from flask import Flask
 import logging
 from views import simple_page
+from perceptron import VowelPerceptron
 
 
 def create_app(package_name, package_path, settings_override=None):

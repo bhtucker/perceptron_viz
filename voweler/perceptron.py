@@ -41,7 +41,6 @@ class VowelPerceptron(Perceptron):
         if update:
             error = is_vowel(letter) - pred
             self.update(point, error)
-            self.count += 1
         return pred
 
     def to_vec(self, char):
