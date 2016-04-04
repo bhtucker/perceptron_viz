@@ -1,4 +1,3 @@
-
 var SCORE_SEP = ' / ';
 
 function shuffle(array) {
@@ -101,7 +100,6 @@ function getState(letter) {
         type: 'get',
         data: data,
         success: function(data) {
-            console.log(data)
             updateVowels(data.vowels);
             updateWeights(data.weights);
             updatePlot(data.scatter_data, plot);
@@ -131,14 +129,13 @@ function updateScore(value, index) {
     $('#score').text(current_scores.join(SCORE_SEP));
 }
 
-function setSalt() {
-    // sets new hashing salt for character embedding
+function setSize() {
+    // sets new vector size for character embedding
     // updates page with new perceptron state
-    var salt = $('#salt')[0].value;
-    var data = {"salt": salt};
-    console.log(data);
+    var size = $('#size')[0].value;
+    var data = {"size": size};
     $.ajax({
-        url: '/salt',
+        url: '/size',
         type: 'get',
         data: data,
         success: function(data) {
@@ -201,6 +198,13 @@ var chart = c3.generate({
         width: {
             ratio: .5 
         }
+    },
+    axis: {
+        y: {
+            tick: {
+                format: function (d) {return d.toString().substr(0, 4)}
+            }
+        }
     }
 });
 
@@ -208,4 +212,4 @@ var plot = initializeScatter('#plot');
 var lda_plot = initializeScatter('#lda_plot');
 
 getState();
-setSalt();
+setSize();

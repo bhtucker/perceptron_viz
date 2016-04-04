@@ -31,6 +31,7 @@ class Perceptron(object):
 
 class VowelPerceptron(Perceptron):
     """Vowel-detection specific methods for perceptron"""
+
     def __init__(self, salt='', *args, **kwargs):
         super(VowelPerceptron, self).__init__(**kwargs)
         self.letter_map = self.get_embedding()

@@ -39,7 +39,7 @@ $ python wsgi.py
 
 ```
 
-and it should work! (TODO: 5000 is hardcoded in template)
+and it should work!
 
 
 
