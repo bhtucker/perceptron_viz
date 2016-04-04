@@ -21,7 +21,8 @@ def create_app(package_name, package_path, settings_override=None):
     app.config.from_object('voweler.settings')
     app.config.from_pyfile('settings.cfg', silent=True)
     app.config.from_object(settings_override)
-
+    app.vp = VowelPerceptron()
+    app.vp.set_state()
     logger = logging.getLogger('werkzeug')
     handler = logging.FileHandler('access.log')
     logger.addHandler(handler)
