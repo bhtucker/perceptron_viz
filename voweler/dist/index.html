@@ -1,0 +1,85 @@
+<html>
+<head>
+	<link rel="icon" type="image/png" href='/dist/favicon.png' />
+	<link rel="stylesheet" type="text/css" href='/dist/style.css' />
+
+</head>
+
+<body>
+<h1 class='title'>Perceptron Visualization</h1>
+<p>
+	This app illustrates how online learning relates to the sequence of training data, as well as how dimensionality aids in classification.
+	We draw 26 random vectors, and, mapping them to the alphabet, assign each letter to either the 'consonant' class or the 'vowel' class.
+	Select a dimensionality to redraw letter positions in that space.
+	To assess how separable the classes are under the current draw, classification via Linear Discriminant Analysis is performed for each random draw.
+	The accuracy LDA achieves is shown alongside the perceptron accuracy as a loose upper bound of what can be expected.
+	Similarly, the projection of letters onto a decision line is shown for both the perceptron (above) and LDA (below).
+</p>
+<section>
+	<div id='one'>
+		<h3 class='title'>Click an error to train the perceptron (red = vowel)</h3>
+		<div>
+		  	<span class='letter' id='a'>a</span>
+		  	<span class='letter' id='b'>b</span>
+		  	<span class='letter' id='c'>c</span>
+		  	<span class='letter' id='d'>d</span>
+		  	<span class='letter' id='e'>e</span>
+		  	<span class='letter' id='f'>f</span>
+		  	<span class='letter' id='g'>g</span>
+		  	<span class='letter' id='h'>h</span>
+		  	<span class='letter' id='i'>i</span>
+		  	<span class='letter' id='j'>j</span>
+		  	<span class='letter' id='k'>k</span>
+		  	<span class='letter' id='l'>l</span>
+		  	<span class='letter' id='m'>m</span>
+		  	<span class='letter' id='n'>n</span>
+		  	<span class='letter' id='o'>o</span>
+		  	<span class='letter' id='p'>p</span>
+		  	<span class='letter' id='q'>q</span>
+		  	<span class='letter' id='r'>r</span>
+		  	<span class='letter' id='s'>s</span>
+		  	<span class='letter' id='t'>t</span>
+		  	<span class='letter' id='u'>u</span>
+		  	<span class='letter' id='v'>v</span>
+		  	<span class='letter' id='w'>w</span>
+		  	<span class='letter' id='x'>x</span>
+		  	<span class='letter' id='y'>y</span>
+		  	<span class='letter' id='z'>z</span>
+	</div>
+	<div id='two'>
+		<span class='score' id='score'>?</span>
+		<h4>Perceptron vs LDA Accuracy Scores</h4>		
+	</div>
+</section>
+  <br>
+  <h3 class='title'>Or teach in batches:</h3>
+  <button id='trainAlphabet'>Teach it the whole alphabet</button>
+  <br>
+  <button id='trainVowels'>Teach it the vowels</button>
+  <br>
+  <button id='trainConsonants'>Teach it the consonants</button>
+  <br>
+  <button id='setSize'>Set a new size to embed characters differently</button>
+  <input type="textbox" id='size' value=""></input>
+
+
+<div class='container'>
+	<h1 class='title'>Separability Plots</h1>
+	<h3 class='title'>Current Perceptron Projection</h3>
+	<div class='plot'>
+		<div id='plot'> </div>
+	</div>
+	<h3 class='title'>Linear Discriminant Projection</h3>
+	<div class='lda_plot'>
+		<div id='lda_plot'> </div>
+	</div>
+	<br>
+	<div class='chart'>
+		<div id='chart'></div>
+	</div>
+</div>
+
+
+<script src="/dist/bundle.js" type="text/javascript"></script>
+
+</body>
