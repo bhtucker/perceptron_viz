@@ -5,7 +5,7 @@
     voweler flask app
 """
 
-from . import factory, separability, embedding
+from . import factory, separability
 from perceptron import VowelPerceptron
 
 
