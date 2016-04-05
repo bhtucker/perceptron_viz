@@ -4,7 +4,7 @@
   "description": "Simple frontend for training and visualizing a perceptron",
   "main": "index.js",
   "scripts": {
-    "prebuild": "rm -rf dist && mkdir dist && cp public/* dist/",
+    "prebuild": "rm -rf ../voweler/dist && mkdir ../voweler/dist && cp public/* ../voweler/dist/",
     "build": "webpack --optimize-dedupe --devtool source-map",
     "postbuild": "",
     "test": "echo \"Error: no test specified\" && exit 1"
