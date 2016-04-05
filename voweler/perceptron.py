@@ -10,10 +10,7 @@ import numpy as np
 import math
 from string import ascii_lowercase
 from letters import is_vowel
-<<<<<<< HEAD
 import uwsgi_shared_memory as sm
-=======
->>>>>>> master
 
 
 class Perceptron(object):
@@ -50,7 +47,6 @@ class VowelPerceptron(Perceptron):
     def to_vec(self, char):
         return self.letter_map[char]
 
-<<<<<<< HEAD
     def get_state(self):
         state = sm.get_state()
         self.w = np.array(state['weights'])
@@ -64,7 +60,5 @@ class VowelPerceptron(Perceptron):
             weights=self.w,
             letter_map=self.letter_map))
 
-=======
->>>>>>> master
     def get_embedding(self):
         return {l: np.random.random(self.input_width) for l in ascii_lowercase}
