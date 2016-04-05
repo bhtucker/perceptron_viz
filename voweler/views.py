@@ -7,7 +7,6 @@
 """
 
 from flask import (
-
     Blueprint, render_template, jsonify, request, current_app
 )
 import voweler
@@ -24,10 +23,8 @@ def render_score(score):
 
 @simple_page.route('/')
 def base():
-    return render_template(
-        'show.html',
-        letters=ascii_lowercase
-    )
+    # serve the single page app
+    return current_app.send_static_file('index.html')
 
 
 @simple_page.route('/state')
@@ -66,7 +63,6 @@ def state():
         scatter_data=scatter_data,
         current_score=render_score(current_score)
     )
-
 
 
 @simple_page.route('/size')

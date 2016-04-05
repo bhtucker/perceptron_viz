@@ -17,7 +17,7 @@ def create_app(package_name, package_path, settings_override=None):
     :param package_path: application package path
     :param settings_override: a dictionary of settings to override
     """
-    app = Flask(package_name, instance_relative_config=True)
+    app = Flask(package_name, instance_relative_config=True, static_folder='dist')
 
     app.config.from_object('voweler.settings')
     app.config.from_pyfile('settings.cfg', silent=True)
