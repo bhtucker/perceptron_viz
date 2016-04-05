@@ -23,15 +23,8 @@ def render_score(score):
 
 @simple_page.route('/')
 def base():
-    print current_app.config.get('STATIC_FOLDER')
-    print current_app.root_path
+    # serve the single page app
     return current_app.send_static_file('index.html')
-
-
-@simple_page.route('/sty')
-def test_style():
-    print current_app.config.get('STATIC_FOLDER')
-    return current_app.send_static_file('style.css')
 
 
 @simple_page.route('/state')

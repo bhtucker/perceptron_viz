@@ -10,7 +10,6 @@ import numpy as np
 import math
 from string import ascii_lowercase
 from letters import is_vowel
-from embedding import get_embedding
 
 
 class Perceptron(object):
@@ -31,9 +30,10 @@ class Perceptron(object):
 
 class VowelPerceptron(Perceptron):
     """Vowel-detection specific methods for perceptron"""
-    def __init__(self, *args, **kwargs):
+
+    def __init__(self, salt='', *args, **kwargs):
         super(VowelPerceptron, self).__init__(**kwargs)
-        self.to_vec = get_embedding(self.input_width)
+        self.letter_map = self.get_embedding()
 
     def handle_letter(self, letter, update=True):
         point = self.to_vec(letter)
@@ -42,3 +42,9 @@ class VowelPerceptron(Perceptron):
             error = is_vowel(letter) - pred
             self.update(point, error)
         return pred
+
+    def to_vec(self, char):
+        return self.letter_map[char]
+
+    def get_embedding(self):
+        return {l: np.random.random(self.input_width) for l in ascii_lowercase}
