@@ -1,3 +1,4 @@
+
 var SCORE_SEP = ' / ';
 
 function shuffle(array) {
@@ -112,13 +113,13 @@ function getState(letter) {
 }
 
 function updatePlot (separation_data, c3_plot) {
-    load_data = {
+    var load_data = {
         xs: {
             consonant: 'consonant_x',
             vowel: 'vowel_x',
         },
         columns: separation_data
-    }
+    };
 
     c3_plot.load(load_data);
 }
