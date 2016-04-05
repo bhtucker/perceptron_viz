@@ -46,6 +46,14 @@ After building, `/voweler/dist/` should exist
 
 Run `python wsgi.py` to run app simply.
 
-Cross-request state persistence is available via shared memory managed by `uwsgi`: see the [multiapp branch](https://github.com/bhtucker/perceptron_viz/tree/multiapp)
+This branch offers support for multiple worker processes.
 
+The recommended invocation is:
 
+```
+uwsgi --http :9090 --wsgi-file wsgi.py --master --processes 2 --threads 1 --stats 127.0.0.1:9191 --sharedarea 5
+```
+
+If you select a *very* high dimensionality for your embedding, you may exceed the memory allocated for sharing state. If so, you can increase the allocation with the argument to `--sharedarea``
+
+Here's more info on [UWSGI](http://uwsgi-docs.readthedocs.org/en/latest/WSGIquickstart.html) and the [SharedArea feature](http://uwsgi-docs.readthedocs.org/en/latest/SharedArea.html)
