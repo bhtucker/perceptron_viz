@@ -1,45 +1,51 @@
 
+
+
+
+
 ## Perceptron Learning
 
 A perceptron is the simplest form of 'neural network' learning. 
 
 The 'neuron' is simply a vector that can be multiplied against data points to say 1 or 0. 
 
-![Weights](weights.png)
+This perceptron tries to learn which letters are vowels, ie, we draw 26 points in space and say some are one class and the rest are another.
 
-Learning consists of exposing the perceptron to data, and if it's wrong, adjusting the vector in the other direction. 
 
-This app uses core python's hash function to convert characters into 11 digit numbers, which are then the learning space for the perceptron's 11-weight model.
+## Visualization App
 
-At the moment you get a VowelPerceptron `vp` just for importing the module `voweler`:
+You can:
 
-```
-In [8]: voweler.vp.to_vec('h')
-Out[8]: array([1, 3, 3, 1, 2, 0, 4, 0, 0, 4, 1])
-```
+* select what letter (or groups of letters) to feed to the perceptron next
+* watch it's learning pattern (initially, moving left after consonants, right after vowels)
+* see the weight vector at bottom of page
+* see the current accuracy as compared to a benchmark accuracy from a linear algebra class separation solution (LDA)
+* adjust the dimensionality
 
-Each page load gets predictions (red vowel, blue consonant) for the full alphabet from the current perceptron state, as well as a graph of that state.
-
-Run yourself to click a letter and teach the perceptron! (Only errors count)
-
-![Graph](perceptron_state.png)
 
 ## To run
 
-Requires numpy and Flask
+Requires numpy/scipy (if you need these look up anaconda distribution)
 
-Simply:
-
-```
-$ python wsgi.py 
- * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
- * Restarting with stat
- * Debugger is active!
- * Debugger pin code: 154-709-709
+Install python dependencies with
 
 ```
+pip install .
+```
 
-and it should work!
+from base directory.
 
+Build JS app from `viz` directory
+
+```
+npm install
+npm run build
+```
+
+After building, `/voweler/dist/` should exist
+
+Run `python wsgi.py` to run app simply.
+
+Cross-request state persistence is available via shared memory managed by `uwsgi`: see the [multiapp branch](https://github.com/bhtucker/perceptron_viz/tree/multiapp)
 
 
