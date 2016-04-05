@@ -1,3 +1,5 @@
+import $ from 'jquery';
+import c3 from 'c3';
 var SCORE_SEP = ' / ';
 
 function shuffle(array) {
@@ -112,13 +114,13 @@ function getState(letter) {
 }
 
 function updatePlot (separation_data, c3_plot) {
-    load_data = {
+    var load_data = {
         xs: {
             consonant: 'consonant_x',
             vowel: 'vowel_x',
         },
         columns: separation_data
-    }
+    };
 
     c3_plot.load(load_data);
 }
@@ -208,8 +210,20 @@ var chart = c3.generate({
     }
 });
 
+function registerOnClicks() {
+    $('#trainAlphabet').click(trainAlphabet);
+    $('#trainVowels').click(trainVowels);
+    $('#trainConsonants').click(trainConsonants);
+    $('#setSize').click(setSize);
+    var letters = getLetters();
+    for (var i = letters.length - 1; i >= 0; i--) {
+        $('#' + letters[i]).click(getState.bind(undefined, letters[i]));
+    };
+};
+
 var plot = initializeScatter('#plot');
 var lda_plot = initializeScatter('#lda_plot');
 
 getState();
 setSize();
+registerOnClicks();
